@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  DATATYPES                                                            07/20/2020 20:35:45 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\datatypes.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE datatypes.asm SET(SMALL) DEBUG PRINT(.\Listings\datatypes.lst) OBJECT(.
+                      \Objects\datatypes.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 1C                2     DB 28 ;DECIMAL(1C IN HEX)
+0001 35                3     DB 00110101B ;BINARY(35  IN HEX)
+0002 39                4     DB 39H ;HEX
+0001                   5     ORG 0001H
+0001 32353931          6     DB "2591" ;ASCII NO
+0002                   7     ORG 0002H
+0002 4D59204E          8     DB "MY NAME IS ASHUTOSH" 
+0006 414D4520                
+000A 49532041                
+000E 53485554                
+0012 4F5348                  
+                       9     END
+A51 MACRO ASSEMBLER  DATATYPES                                                            07/20/2020 20:35:45 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

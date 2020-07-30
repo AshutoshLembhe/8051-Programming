@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  DIRECT                                                               07/23/2020 20:51:30 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\direct.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE direct.asm SET(SMALL) DEBUG PRINT(.\Listings\direct.lst) OBJECT(.\Objec
+                      ts\direct.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7E25              2     MOV R6,#25H
+0002 7912              3     MOV R1,#12H
+0004 74F3              4     MOV A,#0F3H
+0006 C006              5     PUSH 6
+0008 C001              6     PUSH 1
+000A C0E0              7     PUSH 0E0H
+000C D2D3              8     SETB PSW.3
+000E D0F0              9     POP 0F0H
+0010 D009             10     POP 09
+0012 D008             11     POP 08
+                      12     END
+A51 MACRO ASSEMBLER  DIRECT                                                               07/23/2020 20:51:30 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+PSW. . . . . . . .  D ADDR   00D0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

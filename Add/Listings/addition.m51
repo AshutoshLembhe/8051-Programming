@@ -1,0 +1,52 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    07/20/2020  20:27:24  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\add.obj TO .\Objects\addition PRINT (.\Listings\addition.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\add.obj (ADD)
+
+
+LINK MAP OF MODULE:  .\Objects\addition (ADD)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0016H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\addition (ADD)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ADD
+  D:00F0H         SYMBOL        B
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0005H         LINE#         5
+  C:0007H         LINE#         6
+  C:0009H         LINE#         7
+  C:000BH         LINE#         8
+  C:000CH         LINE#         9
+  C:000DH         LINE#         10
+  C:000FH         LINE#         11
+  C:0011H         LINE#         12
+  C:0014H         LINE#         13
+  -------         ENDMOD        ADD
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0016H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=22
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

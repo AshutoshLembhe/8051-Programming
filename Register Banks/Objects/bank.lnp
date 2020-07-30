@@ -1,0 +1,3 @@
+".\Objects\registerbank.obj" 
+TO ".\Objects\bank" 
+PRINT(".\Listings\bank.m51") RAMSIZE(256) 

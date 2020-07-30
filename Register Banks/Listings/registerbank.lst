@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  REGISTERBANK                                                         07/20/2020 20:56:04 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\registerbank.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE registerbank.asm SET(SMALL) DEBUG PRINT(.\Listings\registerbank.lst) OB
+                      JECT(.\Objects\registerbank.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 D2D4              2     SETB PSW.4
+0002 7899              3     MOV R0,#99H
+0004 7985              4     MOV R1,#85H
+0006 7A3F              5     MOV R2,#3FH
+0008 7F63              6     MOV R7,#63H
+000A 7D12              7     MOV R5,#12H
+                       8     END
+A51 MACRO ASSEMBLER  REGISTERBANK                                                         07/20/2020 20:56:04 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+PSW. . . . . . . .  D ADDR   00D0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

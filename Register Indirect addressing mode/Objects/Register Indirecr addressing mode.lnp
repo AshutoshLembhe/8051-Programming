@@ -1,0 +1,3 @@
+".\Objects\indirectloop2.obj" 
+TO ".\Objects\Register Indirecr addressing mode" 
+PRINT(".\Listings\Register Indirecr addressing mode.m51") RAMSIZE(256) 

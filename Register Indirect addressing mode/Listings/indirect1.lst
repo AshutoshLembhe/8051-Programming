@@ -1,0 +1,32 @@
+A51 MACRO ASSEMBLER  INDIRECT1                                                            07/30/2020 22:05:19 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\indirect1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE indirect1.asm SET(SMALL) DEBUG PRINT(.\Listings\indirect1.lst) OBJECT(.
+                      \Objects\indirect1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 783C              2     MOV R0,#3CH ;3C MEMORY ADDRESS ASSIGNED TO R0
+0002 7603              3     MOV @R0,#3  ;BINARY NO. 3 TO MEMORY AT 3CH
+0004 E6                4     MOV A,@R0   ;MOVE THE CONTENTS OF RAM LOCATION R0 TO A
+                       5     
+0005 909000            6     MOV DPTR,#9000H ;ADDRESS OF EXTERNAL MEMORY
+0008 E0                7     MOVX A,@DPTR ;MOV CONTENT TO A FROM ADDRESS LOCATION OF DPTR
+                       8     END
+A51 MACRO ASSEMBLER  INDIRECT1                                                            07/30/2020 22:05:19 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

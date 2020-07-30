@@ -1,0 +1,35 @@
+A51 MACRO ASSEMBLER  SECOND                                                               07/20/2020 20:05:21 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\second.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE second.asm SET(SMALL) DEBUG PRINT(.\Listings\second.lst) OBJECT(.\Objec
+                      ts\second.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7423              2     MOV A,#23H
+0002 7812              3     MOV R0,#12H
+0004 791F              4     MOV R1,#1FH
+0006 7A2B              5     MOV R2,#2BH
+0008 75F03C            6     MOV B,#3CH
+000B 7F9D              7     MOV R7,#9DH
+000D 7DF9              8     MOV R5,#0F9H
+000F 7E0C              9     MOV R6,#12
+                      10     END
+A51 MACRO ASSEMBLER  SECOND                                                               07/20/2020 20:05:21 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
