@@ -1,0 +1,31 @@
+A51 MACRO ASSEMBLER  8BITADDINDIRECT                                                      08/01/2020 19:24:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\8bitaddindirect.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 8bitaddindirect.asm SET(SMALL) DEBUG PRINT(.\Listings\8bitaddindirect.l
+                      st) OBJECT(.\Objects\8bitaddindirect.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7820              2     MOV R0,#20H
+0002 7921              3     MOV R1,#21H ;ASSIGNING ADDRESS LOCATION TO R0 AND R1.
+0004 E6                4     MOV A,@R0 ; move the contents of RAM location whose address is hold by R0 into A 
+0005 27                5     ADD A,@R1 ;ADDING THE CONTENTS AT RAM LOCATION R1 TO ACCUMULATOR.
+0006 F522              6     MOV 22H,A
+                       7     END
+A51 MACRO ASSEMBLER  8BITADDINDIRECT                                                      08/01/2020 19:24:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

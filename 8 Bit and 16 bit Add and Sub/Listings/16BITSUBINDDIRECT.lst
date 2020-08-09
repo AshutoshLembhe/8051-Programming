@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  16BITSUBINDDIRECT                                                    08/01/2020 20:16:42 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\16BITSUBINDDIRECT.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 16BITSUBINDDIRECT.asm SET(SMALL) DEBUG PRINT(.\Listings\16BITSUBINDDIRE
+                      CT.lst) OBJECT(.\Objects\16BITSUBINDDIRECT.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 C3                2     CLR C
+0001 7860              3     MOV R0,#60H
+0003 7961              4     MOV R1,#61H
+0005 E6                5     MOV A,@R0
+0006 97                6     SUBB A,@R1
+0007 FA                7     MOV R2,A ;LOWER BYTE SUBTRACTION
+                       8     
+0008 7862              9     MOV R0,#62H
+000A 7963             10     MOV R1,#63H
+000C E6               11     MOV A,@R0
+000D 97               12     SUBB A,@R1
+000E FB               13     MOV R3,A ;HIGHER BYTE ADDITION
+                      14     END
+A51 MACRO ASSEMBLER  16BITSUBINDDIRECT                                                    08/01/2020 20:16:42 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

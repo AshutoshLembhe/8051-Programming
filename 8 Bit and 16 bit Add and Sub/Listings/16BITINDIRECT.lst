@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  16BITINDIRECT                                                        08/01/2020 19:47:14 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\16BITINDIRECT.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 16BITINDIRECT.asm SET(SMALL) DEBUG PRINT(.\Listings\16BITINDIRECT.lst) 
+                      OBJECT(.\Objects\16BITINDIRECT.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 C3                2     CLR C ;CLEAR CARRY BIT
+0001 7820              3     MOV R0,#20H
+0003 7921              4     MOV R1,#21H
+0005 E6                5     MOV A,@R0 
+0006 27                6     ADD A,@R1
+0007 FA                7     MOV R2,A ;LOWER BYTE
+                       8     
+0008 7822              9     MOV R0,#22H
+000A 7923             10     MOV R1,#23H
+000C E6               11     MOV A,@R0
+000D 37               12     ADDC A,@R1 ;ADD WITH CARRY
+000E FB               13     MOV R3,A ;HIGER BYTE ADDRESS
+                      14     END
+A51 MACRO ASSEMBLER  16BITINDIRECT                                                        08/01/2020 19:47:14 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

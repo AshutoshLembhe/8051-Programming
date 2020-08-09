@@ -1,0 +1,3 @@
+".\Objects\16BITSUBINDDIRECT.obj" 
+TO ".\Objects\Exercise" 
+PRINT(".\Listings\Exercise.m51") RAMSIZE(256) 

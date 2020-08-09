@@ -1,0 +1,35 @@
+A51 MACRO ASSEMBLER  8BITSUBDIRECT                                                        08/01/2020 19:53:04 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\8BITSUBDIRECT.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 8BITSUBDIRECT.asm SET(SMALL) DEBUG PRINT(.\Listings\8BITSUBDIRECT.lst) 
+                      OBJECT(.\Objects\8BITSUBDIRECT.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 C3                2     CLR C
+0001 E570              3     MOV A,70H
+0003 A871              4     MOV R0,71H
+0005 98                5     SUBB A,R0
+0006 5002              6     JNC NEXT
+0008 F4                7     CPL A
+0009 04                8     INC A
+000A F9                9     NEXT: MOV R1, A
+                      10     END
+A51 MACRO ASSEMBLER  8BITSUBDIRECT                                                        08/01/2020 19:53:04 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+NEXT . . . . . . .  C ADDR   000AH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

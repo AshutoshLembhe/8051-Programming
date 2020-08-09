@@ -1,0 +1,51 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    08/01/2020  20:16:42  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\16BITSUBINDDIRECT.obj TO .\Objects\Exercise PRINT (.\Listings\Exercise.m51) RAMSIZ
+>> E (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\16BITSUBINDDIRECT.obj (16BITSUBINDDIRECT)
+
+
+LINK MAP OF MODULE:  .\Objects\Exercise (16BITSUBINDDIRECT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000FH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Exercise (16BITSUBINDDIRECT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        16BITSUBINDDIRECT
+  C:0000H         LINE#         2
+  C:0001H         LINE#         3
+  C:0003H         LINE#         4
+  C:0005H         LINE#         5
+  C:0006H         LINE#         6
+  C:0007H         LINE#         7
+  C:0008H         LINE#         9
+  C:000AH         LINE#         10
+  C:000CH         LINE#         11
+  C:000DH         LINE#         12
+  C:000EH         LINE#         13
+  -------         ENDMOD        16BITSUBINDDIRECT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000FH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=15
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
