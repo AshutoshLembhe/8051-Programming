@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  SORT                                                                 08/08/2020 12:13:26 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\sort.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE sort.asm SET(SMALL) DEBUG PRINT(.\Listings\sort.lst) OBJECT(.\Objects\s
+                      ort.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7830              2     ITER:MOV R0,#30H
+0002 7931              3             MOV R1,#31H
+0004 7A04              4             MOV R2,#04
+0006 7B04              5             MOV R3,#04
+0008 E6                6             OPER:MOV A,@R0
+0009 87F0              7                     MOV B,@R1
+000B B5F000            8                     CJNE A,B,CHECK ; DO JC FOR ASCENDING AND JNC FOR DESCENDING 
+000E 4005              9             CHECK:JC NOEXCH ;C=0 DO XCH OR C=1 NO XCH
+0010 C5F0             10                     XCH A,B
+0012 F6               11                     MOV @R0,A
+0013 A7F0             12                     MOV @R1,B
+0015 08               13             NOEXCH:INC R0
+0016 09               14                     INC R1
+0017 DAEF             15                     DJNZ R2,OPER
+0019 DBE5             16                     DJNZ R3,ITER
+001B 80FE             17     HERE:SJMP HERE
+                      18     END
+A51 MACRO ASSEMBLER  SORT                                                                 08/08/2020 12:13:26 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+CHECK. . . . . . .  C ADDR   000EH   A   
+HERE . . . . . . .  C ADDR   001BH   A   
+ITER . . . . . . .  C ADDR   0000H   A   
+NOEXCH . . . . . .  C ADDR   0015H   A   
+OPER . . . . . . .  C ADDR   0008H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

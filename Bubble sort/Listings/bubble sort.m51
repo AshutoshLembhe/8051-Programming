@@ -1,0 +1,65 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    08/08/2020  12:13:26  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\sort.obj TO .\Objects\bubble sort PRINT (.\Listings\bubble sort.m51) RAMSIZE (256)
+>> 
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\sort.obj (SORT)
+
+
+LINK MAP OF MODULE:  .\Objects\bubble sort (SORT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     001DH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\bubble sort (SORT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SORT
+  D:00F0H         SYMBOL        B
+  C:000EH         SYMBOL        CHECK
+  C:001BH         SYMBOL        HERE
+  C:0000H         SYMBOL        ITER
+  C:0015H         SYMBOL        NOEXCH
+  C:0008H         SYMBOL        OPER
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0006H         LINE#         5
+  C:0008H         LINE#         6
+  C:0009H         LINE#         7
+  C:000BH         LINE#         8
+  C:000EH         LINE#         9
+  C:0010H         LINE#         10
+  C:0012H         LINE#         11
+  C:0013H         LINE#         12
+  C:0015H         LINE#         13
+  C:0016H         LINE#         14
+  C:0017H         LINE#         15
+  C:0019H         LINE#         16
+  C:001BH         LINE#         17
+  -------         ENDMOD        SORT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001DH BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=29
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  08/08/2020  12:13:26  PAGE 2
+
+
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
