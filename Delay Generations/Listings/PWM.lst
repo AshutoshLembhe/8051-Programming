@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  PWM                                                                  08/29/2020 12:12:29 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PWM.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PWM.asm SET(SMALL) DEBUG PRINT(.\Listings\PWM.lst) OBJECT(.\Objects\PWM
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 B290              2     BACK: CPL P1.0
+0002 120007            3     LCALL DELAY
+0005 80F9              4     SJMP BACK
+0007 790A              5     DELAY:MOV R1,#10
+0009 7AE6              6     A1:MOV R2,#230
+000B DAFE              7     AGAIN:DJNZ R2,AGAIN
+000D D9FA              8     DJNZ R1,A1
+000F 22                9     RET
+                      10     END
+A51 MACRO ASSEMBLER  PWM                                                                  08/29/2020 12:12:29 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+A1 . . . . . . . .  C ADDR   0009H   A   
+AGAIN. . . . . . .  C ADDR   000BH   A   
+BACK . . . . . . .  C ADDR   0000H   A   
+DELAY. . . . . . .  C ADDR   0007H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

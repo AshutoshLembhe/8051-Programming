@@ -1,0 +1,49 @@
+A51 MACRO ASSEMBLER  PWM4                                                                 09/05/2020 03:57:51 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PWM4.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PWM4.asm SET(SMALL) DEBUG PRINT(.\Listings\PWM4.lst) OBJECT(.\Objects\P
+                      WM4.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758920            2     MOV TMOD,#20H ;TIMER 0,MODE 2 8BIT AUTO RELOAD
+0003 758A77            3     AGAIN:MOV TL0,#77H
+0006 758CBF            4     MOV TH0,#0BFH
+0009 110F              5     ACALL DELAY
+000B B290              6     CPL P1.0
+000D 80F4              7     SJMP AGAIN
+000F D28C              8     DELAY: SETB TR0
+0011 0590              9     INC P1
+0013 308DFD           10     BACK: JNB TF0,BACK
+0016 C28C             11     CLR TR0
+                      12     
+0018 C28D             13     CLR TF0
+001A DDF3             14     DJNZ R5,DELAY
+001C 22               15     RET
+                      16     END
+A51 MACRO ASSEMBLER  PWM4                                                                 09/05/2020 03:57:51 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0003H   A   
+BACK . . . . . . .  C ADDR   0013H   A   
+DELAY. . . . . . .  C ADDR   000FH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
