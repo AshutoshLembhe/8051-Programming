@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  WAVE2                                                                09/09/2020 23:35:48 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\wave2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE wave2.asm SET(SMALL) DEBUG PRINT(.\Listings\wave2.lst) OBJECT(.\Objects
+                      \wave2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758910            2     MOV TMOD,#00010000B
+0003 758BA5            3     BACK:MOV TL1,#0A5H ;LOWER BYTE
+0006 758DFF            4     MOV TH1,#0FFH
+0009 D28E              5     SETB TR1 ;START TIMER 1
+000B 308FFD            6     AGAIN:JNB TF1,AGAIN
+000E C28E              7     CLR TR1
+0010 B2A3              8     CPL P2.3
+0012 C28F              9     CLR TF1
+0014 80ED             10     SJMP BACK
+                      11     END
+A51 MACRO ASSEMBLER  WAVE2                                                                09/09/2020 23:35:48 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   000BH   A   
+BACK . . . . . . .  C ADDR   0003H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  WAVE                                                                 09/09/2020 23:04:31 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\WAVE.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE WAVE.asm SET(SMALL) DEBUG PRINT(.\Listings\WAVE.lst) OBJECT(.\Objects\W
+                      AVE.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758910            2     MOV TMOD,#10H 
+0003 758BA2            3     BACK:MOV TL1,#0A2H
+0006 758DFF            4              MOV TH1,#0FFH
+0009 C2A3              5              CLR P2.3
+000B 1119              6     ACALL DELAY
+000D 758BA2            7             MOV TL1,#0A2H
+0010 758DFF            8             MOV TH1,#0FFH
+0013 D2A3              9             SETB P2.3
+0015 1119             10     ACALL DELAY
+0017 80EA             11         SJMP BACK
+0019 D28E             12     DELAY:SETB TR1
+001B 308FFD           13     AGAIN:JNB TF1,AGAIN
+001E C28E             14               CLR TR1
+0020 C28F             15               CLR TF1
+0022 22               16               RET ;RETURNS TO Ton CYCLE FROM ACALL DELAY
+                      17     END
+A51 MACRO ASSEMBLER  WAVE                                                                 09/09/2020 23:04:31 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   001BH   A   
+BACK . . . . . . .  C ADDR   0003H   A   
+DELAY. . . . . . .  C ADDR   0019H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
