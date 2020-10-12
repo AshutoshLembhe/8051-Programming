@@ -1,0 +1,72 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/07/2020  23:05:43  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\BAUD.obj TO .\Objects\baud rate PRINT (.\Listings\baud rate.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\BAUD.obj (BAUD)
+
+
+LINK MAP OF MODULE:  .\Objects\baud rate (BAUD)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0026H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\baud rate (BAUD)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        BAUD
+  D:00E0H         SYMBOL        ACC
+  C:0011H         SYMBOL        AGAIN
+  C:0016H         SYMBOL        NEXT
+  D:0087H         SYMBOL        PCON
+  D:0099H         SYMBOL        SBUF
+  D:0098H         SYMBOL        SCON
+  C:001EH         SYMBOL        SUB
+  D:008DH         SYMBOL        TH1
+  B:0098H.1       SYMBOL        TI
+  D:0089H         SYMBOL        TMOD
+  B:0088H.6       SYMBOL        TR1
+  C:0020H         SYMBOL        WAIT
+  C:0000H         LINE#         2
+  C:0003H         LINE#         3
+  C:0006H         LINE#         5
+  C:0008H         LINE#         6
+  C:000AH         LINE#         7
+  C:000CH         LINE#         9
+  C:000FH         LINE#         10
+  C:0011H         LINE#         11
+  C:0013H         LINE#         12
+  C:0016H         LINE#         13
+  C:0017H         LINE#         14
+  C:0019H         LINE#         15
+  C:001AH         LINE#         16
+  C:001CH         LINE#         17
+  C:001EH         LINE#         18
+  C:0020H         LINE#         19
+  C:0023H         LINE#         20
+  C:0025H         LINE#         21
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/07/2020  23:05:43  PAGE 2
+
+
+  -------         ENDMOD        BAUD
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0026H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=38
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

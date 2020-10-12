@@ -1,0 +1,59 @@
+A51 MACRO ASSEMBLER  BAUD                                                                 10/07/2020 23:05:43 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\BAUD.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE BAUD.asm SET(SMALL) DEBUG PRINT(.\Listings\BAUD.lst) OBJECT(.\Objects\B
+                      AUD.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758920            2     MOV TMOD,#20H ;SM1
+0003 759870            3     MOV SCON,#70H ;SM2
+                       4     ;Activating SMOD=1
+0006 E587              5     MOV A,PCON
+0008 D2E7              6     SETB ACC.7 
+000A F587              7     MOV PCON,A
+                       8     
+000C 758DFD            9     MOV TH1,#-3 ;TIMER ONE ALONE USED 19200 BAUD RATE
+000F D28E             10     SETB TR1
+0011 7812             11     AGAIN:MOV R0,#12H ;ONLY THREE CHARACTERS CAN BE TRASMITTED
+0013 908000           12     MOV DPTR,#8000H ;STARTING LOCATION OF EXTERNAL MEMORY
+0016 E0               13     NEXT:MOVX A,@DPTR ;CONTENT AT ADDRESS OF DPTR IS MOVED TO A AND ACCESSING THE EXTERNAL MEMO
+                             RY.
+0017 111E             14     ACALL SUB ;CALLING SUBROUTINE
+0019 A3               15     INC DPTR
+001A D8FA             16     DJNZ R0,NEXT
+001C 80F3             17     SJMP AGAIN
+001E F599             18     SUB:MOV SBUF,A ;TO HOLD THE DATA FROM A
+0020 3099FD           19     WAIT:JNB TI,WAIT ;MONITOR THE TRANSMIT INTERRUPT FLAG
+0023 C299             20     CLR TI
+0025 22               21     RET
+                      22     END
+A51 MACRO ASSEMBLER  BAUD                                                                 10/07/2020 23:05:43 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+AGAIN. . . . . . .  C ADDR   0011H   A   
+NEXT . . . . . . .  C ADDR   0016H   A   
+PCON . . . . . . .  D ADDR   0087H   A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+SUB. . . . . . . .  C ADDR   001EH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+WAIT . . . . . . .  C ADDR   0020H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
